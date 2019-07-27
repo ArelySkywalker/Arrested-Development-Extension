@@ -1,2 +1,4 @@
-# My-Cool-Chrom-Extenstion
+# My Cool Chrome Extension
 Having fun building a chrome extension
+
+Updates to come.
