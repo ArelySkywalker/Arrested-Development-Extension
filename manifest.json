@@ -5,7 +5,7 @@
 	"description": "We will figure this out later",
 	"version": "0.1",
 	"background": {
-	  "scripts": ["background.js"]
+		"scripts": ["background.js"]
 	},
 	"content_scripts": [
 		{
@@ -16,4 +16,4 @@
 	"browser_action": {
 		"default_icon": "icon.png"
 	}
-  }
+}
