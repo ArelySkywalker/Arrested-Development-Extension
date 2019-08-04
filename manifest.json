@@ -4,13 +4,12 @@
 	"author": "ArelySkywalker",
 	"description": "We will figure this out later",
 	"version": "0.1",
-	"background": {
-		"scripts": ["background.js"]
-	},
+	"permissions": ["activeTab"],
 	"content_scripts": [
 		{
-			"matches": ["<all_urls>"],
-			"js": ["jquery-3.4.1.min.js", "content.js"]
+			"matches": ["*://*/*"],
+			"js": ["jquery-3.4.1.min.js", "content.js"],
+			"run_at": "document_end"
 		}
 	],
 	"browser_action": {
