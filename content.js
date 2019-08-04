@@ -9,23 +9,23 @@ for (var i = 0; i < elements.length; i++) {
 
 		if (node.nodeType === 3) {
 			let text = node.nodeValue;
-			// let replacedText = text.replace(/goodbye|bye/gi, 'may the force be with you');
 			let replacedText = [
-				[/tricks/gi, ' Illusions Michael! Tricks are what whores do for money.'],
-				[/Her/gi, ' Egg?'],
-				[/regret/gi, ' I\'ve made a huge mistake'],
-				[/money/gi, ' There\'s always money in the banana stand.'],
-				[/hello|hi/gi, ' Annyong!'],
-				[/touch/gi, ' No Touching!'],
-				[/banana/gi, '“ I mean, it’s one banana. What could it cost? 10 dollars?'],
-				[/the OC|the O.C./gi, ' Don\'t call it that.']
+				['tricks', /tricks/gi, '(llusions Michael!)'],
+				['her', /her/gi, '(Egg?)'],
+				['regret', /regret/gi, '(I\'ve made a huge mistake.)'],
+				['money', /money/gi, '(There\'s always money in the banana stand.)'],
+				['Hello', /hello/gi, '(Annyong!)'],
+				['touch', /touch/gi, '(No Touching!)'],
+				['banana', /banana/gi, '(I mean, it’s one banana. What could it cost? 10 dollars?'],
+				['the OC', /the OC/gi, '(Don\'t call it that)']
 			];
 			
 			for(let k = 0; k < replacedText.length; k++) {
-				let replaced = text.after(replacedText[k]);
+				let replaced = text.replace(replacedText[k][1],replacedText[k][0] + ' ' + replacedText[k][2]);
 
 				if (replaced !== text) {
-					element.replaceChild(document.createTextNode(replacedText), node);
+				
+					element.replaceChild(document.createTextNode(replaced), node);
 				}
 			}
 		}
