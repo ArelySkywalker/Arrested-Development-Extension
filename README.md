@@ -1,4 +1,3 @@
-# My Cool Chrome Extension
-Having fun building a chrome extension
+# On the next Arrested Development
 
-Updates to come.
+Chrome extension that listens to key words, and inserts quotes from the show Arrested Development.
