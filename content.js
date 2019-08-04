@@ -1,5 +1,5 @@
 // content.js
-let elements = document.getElementsByTagName('*');
+let elements = document.getElementsByTagName('p');
 
 for (var i = 0; i < elements.length; i++) {
 	let element = elements[i];
@@ -24,7 +24,6 @@ for (var i = 0; i < elements.length; i++) {
 				let replaced = text.replace(replacedText[k][1],replacedText[k][0] + ' ' + replacedText[k][2]);
 
 				if (replaced !== text) {
-				
 					element.replaceChild(document.createTextNode(replaced), node);
 				}
 			}
