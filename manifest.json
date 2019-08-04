@@ -1,8 +1,8 @@
 {
 	"manifest_version": 2,
-	"name": "My Cool Extension",
+	"name": "On the next Arrested Development!",
 	"author": "ArelySkywalker",
-	"description": "We will figure this out later",
+	"description": "Chrome extension that listens to key words, and inserts quotes from the show Arrested Development",
 	"version": "0.1",
 	"permissions": ["activeTab"],
 	"content_scripts": [
